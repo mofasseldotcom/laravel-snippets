@@ -4,7 +4,25 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 
 - [GitHub URL](https://github.com/mofasseldotcom/laravel6-tutorial).
 
+## Laravel6 Tutorial
 
+###1. Migrate error: "Specified key was too long ...." Issue can be fixed in both way. Use any one mentioned bellow.
+
+	use Illuminate\Support\Facades\Schema;
+
+	public function boot()
+	{
+	    Schema::defaultStringLength(191);
+	}
+	-------------------------------------------
+	use Illuminate\Database\Schema\Builder;
+
+	public function boot()
+	{
+	    Builder::defaultStringLength(191);
+	}
+
+	
 
 
 
