@@ -2,7 +2,9 @@
 
 Laravel6 Tutorial is a software specially designed & developed to maintain day to day activities of Car selling, washing, reparing shop. We create awesome software for our valuable cients. Don't forget to ask us if you need one.
 
-- [GitHub URL](https://github.com/laravel6-tutorial).
+- [GitHub URL](https://github.com/mofasseldotcom/laravel6-tutorial).
+
+
 
 
 
