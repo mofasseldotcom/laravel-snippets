@@ -27,6 +27,22 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 
 	composer require "almasaeed2010/adminlte=~3.0"
 
+### Create controller with resource route
+
+	php artisan make:controller NameController --resource
+
+### Create migration of Name Table
+
+	php artisan make:migration create_name_table
+
+### Run migrate to create table into database
+
+	php artisan migrate
+
+### Create model, add -m to create migration also
+
+	php artisan make:model Name -m
+
 
 ## Contributing
 
