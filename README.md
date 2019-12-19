@@ -6,7 +6,7 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 
 ## Laravel6 Tutorial
 
-###1. Migrate error: "Specified key was too long ...." Issue can be fixed in both way. Use any one mentioned bellow.
+### Migrate error: "Specified key was too long ...." Issue can be fixed in both way. Use any one mentioned bellow.
 
 	use Illuminate\Support\Facades\Schema;
 
@@ -23,7 +23,9 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 	}
 
 	
+### Add AdminLte template with Laravel
 
+	composer require "almasaeed2010/adminlte=~3.0"
 
 
 ## Contributing
