@@ -33,7 +33,7 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 
 ### Create migration of Name Table
 
-	php artisan make:migration create_name_table
+	php artisan make:migration create_names_table
 
 ### Run migrate to create table into database
 
