@@ -43,6 +43,13 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 
 	php artisan make:model Name -m
 
+### Create factory, add --m=Model to prefilled model name
+
+	php artisan make:factory ModelFactory --model=Model
+	// Add bellow code into DatabaseSeeded.php file 
+	factory(\App\Model::class,10)->create();
+
+
 
 ## Contributing
 
