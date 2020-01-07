@@ -55,7 +55,7 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 	// Add bellow code into DatabaseSeeded.php file 
 	factory(\App\Model::class,10)->create();
 
-### Create factory for Post model, add --m=Post to prefill model name
+### Use intervention/image to resize or fit image
 
 	composer require intervention/image
 	// add on top of controller
