@@ -48,12 +48,20 @@ Laravel6 Tutorial is a software specially designed & developed to maintain day t
 	php artisan make:seeder UsersTableSeeder
 	// Add bellow code into DatabaseSeeded.php file 
 	$this->call(UsersTableSeeder::class);
-	
+
 ### Create factory for Post model, add --m=Post to prefill model name
 
 	php artisan make:factory PostFactory --model=Post
 	// Add bellow code into DatabaseSeeded.php file 
 	factory(\App\Model::class,10)->create();
+
+### Create factory for Post model, add --m=Post to prefill model name
+
+	composer require intervention/image
+	// add on top of controller
+	use Intervention\Image\Facades\Image::class
+	// Insert bellow code inside function to make it useable
+	$image = Image::make('public/foo.jpg')->resize(300, 200)->save();
 
 
 
