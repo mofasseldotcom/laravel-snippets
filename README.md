@@ -74,7 +74,7 @@ Laravel Tutorial is a software specially designed & developed to maintain day to
     <div class="alert alert-danger">
     <ul>
     	@foreach ($errors->all() as $error)
-    					<li>{{ $error }}</li>
+    	<li>{{ $error }}</li>
     	@endforeach
     </ul>
     </div>
