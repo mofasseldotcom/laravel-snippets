@@ -2,7 +2,7 @@
 
 Laravel Tutorial is a software specially designed & developed to maintain day to day activities of Car selling, washing, reparing shop. We create awesome software for our valuable cients. Don't forget to ask us if you need one.
 
-- [GitHub URL](https://github.com/mofasseldotcom/laravel6-tutorial).
+- [GitHub URL](https://github.com/mofasseldotcom/laravel-snippets).
 
 ## Laravel Snippets
 
@@ -71,13 +71,13 @@ Laravel Tutorial is a software specially designed & developed to maintain day to
 
     // inside blade file
     @if ($errors->any())
-    	<div class="alert alert-danger">
-    					<ul>
-    									@foreach ($errors->all() as $error)
-    													<li>{{ $error }}</li>
-    									@endforeach
-    					</ul>
-    	</div>
+    <div class="alert alert-danger">
+    <ul>
+    	@foreach ($errors->all() as $error)
+    					<li>{{ $error }}</li>
+    	@endforeach
+    </ul>
+    </div>
     @endif
 
     // beside input field
