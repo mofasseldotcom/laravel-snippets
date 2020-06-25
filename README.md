@@ -96,13 +96,16 @@ Laravel Tutorial is a software specially designed & developed to maintain day to
 
 ### Model & controller as like regular CRUD development
 
-    // json data returing
+    // json message returing
     if(is_null($data)){
     return response()->json(['message' => 'Actual message to show'], 404);
     }
 
-    // json message returning
-    return response()->json(\$data, 200);
+    // json data returning
+    return response()->json([
+    'message' => 'Actual message to show',
+    'data' => $data
+    ], 200);
 
 ### validation
 
