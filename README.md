@@ -122,6 +122,39 @@ Laravel Tutorial is a software specially designed & developed to maintain day to
     	return response()->json($validator->errors(), 400);
     }
 
+### Token generation for api access
+
+    // need to create a middleware
+    php artisan make:middleware AuthKey
+
+    // inside handle method of newly created AuthKey middleware file
+
+    $token = $request()->header('APP_KEY');
+    if($token != 'ABCDEDFG'){
+    	return response()->json('message' => 'APP_KEY not found!', 401);
+    }
+    return $next($request);
+
+    // inside Http kernel file, api array
+    \App\Http\Middleware\AuthKey::class,
+
+### Basic Authentication for api access
+
+    // need to create a middleware
+    php artisan make:middleware AuthBasic
+
+    // inside handle method of newly created AuthBasic middleware file
+    if(Auth::onceBasic()){
+    	return response()->json('message' => 'Auth failed!', 401);
+    }
+    return $next($request);
+
+    // on top of this middleware file include
+    \Illuminate\Support\Facades\Auth;
+
+    // inside Http kernel file, api array
+    \App\Http\Middleware\AuthBasic::class,
+
 ## Contributing
 
 Thank you for considering contributing
